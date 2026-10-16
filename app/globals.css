@@ -56,3 +56,20 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--steel);outline-offs
 .dot{position:absolute;top:2px;width:16px;height:16px;border-radius:50%;margin-left:-8px}
 .foot{max-width:70ch;margin:0;padding:32px 0 56px;border-top:1px solid var(--line);font-size:16px}
 @media (max-width:700px){.brand{font-size:20px}.navList{gap:0 14px}.chart{top:132px;padding:16px}.barLabel{flex-basis:84px;font-size:14px}.dotRow .barLabel{flex-basis:92px;font-size:14px}.step{min-height:70vh}.source{margin-left:0!important}}
+
+.explore{max-width:none;margin:0 auto}
+.explore h2,.explore .lead{max-width:70ch}
+.explore .card{max-width:1100px;margin:0 auto;padding:32px}
+.explore .summary{font-size:20px;margin-bottom:20px}
+.explore .dotRow{margin:12px 0;font-size:18px}
+.explore .dotRow .barLabel{flex-basis:180px}
+.explore .dotTrack{height:30px}
+.explore .dot{top:3px;width:24px;height:24px;margin-left:-12px}
+.explore .barVal{flex-basis:64px;font-size:18px}
+.explore .source{margin-left:0!important}
+@media (max-width:700px){
+  .explore .card{padding:18px}
+  .explore .dotRow{font-size:16px}
+  .explore .dotRow .barLabel{flex-basis:100px}
+  .explore .barVal{flex-basis:52px;font-size:16px}
+}
