@@ -73,3 +73,31 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--steel);outline-offs
   .explore .dotRow .barLabel{flex-basis:100px}
   .explore .barVal{flex-basis:52px;font-size:16px}
 }
+
+@media (max-width:700px){
+  html{scroll-padding-top:60px}
+
+  .navIn{flex-wrap:nowrap;gap:12px;padding:4px 12px;min-height:52px}
+  .brand{flex:0 0 auto;font-size:18px;white-space:nowrap}
+  .navList{flex:1 1 auto;min-width:0;flex-wrap:nowrap;overflow-x:auto;gap:0 18px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .navList::-webkit-scrollbar{display:none}
+  .navList li{flex:0 0 auto}
+  .navLink{white-space:nowrap;font-size:15px}
+
+  .scrolly{gap:0}
+  .chart{top:56px;padding:12px;border-radius:10px}
+  .chartTitle{font-size:16px;line-height:1.25;margin-bottom:4px}
+  .chart .muted16{font-size:12.5px;line-height:1.35;margin:0 0 8px}
+  .bars{gap:4px}
+  .chart .barRow{font-size:13px;gap:6px}
+  .chart .barLabel{flex-basis:84px;font-size:12.5px}
+  .chart .barTrack,.chart .bar{height:14px}
+  .chart .barVal{flex-basis:40px;font-size:13px}
+  .note{font-size:13px;margin-top:8px;padding-top:6px}
+  .chart .source{font-size:12px;margin-top:4px}
+
+  .steps{padding-bottom:30vh}
+  .step{min-height:85vh;padding-top:0}
+  .step h3{font-size:22px}
+  .step p{font-size:17px}
+}
