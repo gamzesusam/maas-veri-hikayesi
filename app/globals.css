@@ -1,0 +1,58 @@
+:root{--ink:#212A3E;--steel:#394867;--accent:#212A3E;--muted:#7B8699;--bg:#F1F6F9;--card:#FFFFFF;--line:#D0D6DF}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body),system-ui,sans-serif;font-size:18px;line-height:1.6;overflow-x:hidden}
+h1,h2,h3{font-family:var(--font-display),Georgia,serif;margin:0;line-height:1.2}
+a{color:var(--ink);text-decoration:underline;text-underline-offset:3px}a:hover{color:var(--steel)}
+button{font:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible{outline:3px solid var(--steel);outline-offset:2px}
+.nav{position:sticky;top:0;z-index:20;background:var(--ink);color:var(--bg)}
+.navIn{max-width:1280px;margin:0 auto;padding:10px clamp(16px,4vw,48px);min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:12px 28px;flex-wrap:wrap}
+.brand{font-family:var(--font-display),Georgia,serif;font-weight:800;font-size:22px;color:var(--bg);text-decoration:none}
+.navList{display:flex;flex-wrap:wrap;gap:2px 22px;list-style:none;margin:0;padding:0}
+.navLink{display:inline-block;padding:8px 2px;color:var(--bg);text-decoration:none;font-weight:600;font-size:16px;border-bottom:3px solid transparent}
+.navLink:hover{border-bottom-color:var(--muted)}
+.navLink.on{border-bottom-color:var(--bg)}
+.nav a:focus-visible{outline:3px solid var(--bg);outline-offset:2px}
+.wrap{max-width:1280px;margin:0 auto;padding:0 clamp(16px,4vw,48px)}
+.hero{min-height:calc(90vh - 64px);display:flex;flex-direction:column;justify-content:center;gap:22px;max-width:960px}
+.hero h1{font-size:clamp(34px,5.5vw,64px);font-weight:800}
+.eyebrow{margin:0;font-weight:600;color:var(--steel);letter-spacing:.08em;font-size:16px}
+.sub{margin:0;font-size:20px;max-width:66ch}
+.muted16{margin:0 0 12px;font-size:16px;color:#2F3A52}
+.hero .muted16{margin:0}
+.prose{max-width:70ch;margin:0 auto;padding:56px 0}
+.prose h2,.explore h2{font-size:clamp(26px,3.4vw,34px);margin-bottom:16px}
+.prose p{margin:0 0 16px}
+.ruled{border-top:1px solid var(--line);padding:32px 0}
+.h2s{font-size:26px;margin-bottom:12px}
+.small{font-size:17px}
+.scrolly{display:flex;flex-wrap:wrap;gap:48px;align-items:flex-start;padding:24px 0}
+.chart{flex:1.3 1 460px;min-width:0;margin:0;position:sticky;top:84px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+.chartTitle{font-family:var(--font-display),Georgia,serif;font-weight:600;font-size:21px;line-height:1.3;margin-bottom:6px}
+.note{margin:12px 0 0;font-size:16px;font-weight:600;border-top:1px solid var(--line);padding-top:10px}
+.source{margin:6px 0 0;font-size:14px;color:#2F3A52}
+.steps{flex:1 1 360px;min-width:0;max-width:60ch}
+.step{min-height:80vh;padding-top:10vh}
+.step h3{font-size:clamp(24px,3vw,30px);margin-bottom:10px}.step p{margin:0;font-size:18px}
+.bars{display:flex;flex-direction:column;gap:7px}
+.barRow,.dotRow{display:flex;align-items:center;gap:10px;font-size:16px}
+.barLabel{flex:0 0 112px;text-align:right}
+.dotRow .barLabel{flex-basis:130px}
+.barVal{flex:0 0 52px}
+.barTrack{flex:1;background:#E4E9EF;border-radius:4px;height:22px}
+.bar{height:22px;border-radius:4px}
+@media (prefers-reduced-motion:no-preference){.bar{transition:width .6s ease,background .4s}.dot{transition:left .4s}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+.explore{max-width:70ch;margin:0 auto;padding:56px 0}
+.lead{margin:0 0 20px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.pill{min-height:44px;padding:0 18px;border-radius:22px;border:2px solid var(--ink);background:var(--card);color:var(--ink)}
+.pill.on{background:var(--ink);color:#fff}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+.summary{margin:0 0 12px;font-size:17px}
+.dotRow{margin:6px 0}
+.dotTrack{flex:1;position:relative;height:20px;border-bottom:1px solid var(--line)}
+.dot{position:absolute;top:2px;width:16px;height:16px;border-radius:50%;margin-left:-8px}
+.foot{max-width:70ch;margin:0 auto;padding:32px 0 56px;border-top:1px solid var(--line);font-size:16px}
+@media (max-width:700px){.brand{font-size:20px}.navList{gap:0 14px}.chart{top:132px;padding:16px}.barLabel{flex-basis:84px;font-size:14px}.dotRow .barLabel{flex-basis:92px;font-size:14px}.step{min-height:70vh}.source{margin-left:0!important}}
